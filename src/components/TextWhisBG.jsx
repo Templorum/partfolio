@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
+const BGTextColor = `#2e333b`;
 
 const ScreenBlock = styled.div`
     display: flex;
@@ -14,7 +15,7 @@ const BackgroundText = styled.h2`
     position: absolute;
     margin-top: calc(10px + 2vmin*-3);
     font-size: 300%;
-    color: #2e333b;
+    color: ${BGTextColor};
 `
 
 const MainText = styled.p`

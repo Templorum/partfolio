@@ -3,15 +3,21 @@ import styled from 'styled-components'
 
 const Handler = styled.div `
     height: 100vh;
-    color: rgb(240, 240, 240);    
-    text-align: center; 
-` 
-
-const AutorName = styled.h1 `
-    margin-top: 30%;
-    font-family: 'Satisfy', cursive;
-    position: relative;
+    color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 `
+
+const AutorName = styled.h1 `    
+    font-family: 'Kaushan Script', cursive;
+    position: relative;        
+    text-align: center;
+    margin: 0;
+    margin-right: calc(10px + 2vmin*3.5) ; /*Выравнивание текста которое нужо будет чтоб работал последующий фикс background-clipа*/
+`
+
 const FirstLetter = styled.span `
     display: inline-block;
     left: 0; bottom: 0;
@@ -21,26 +27,27 @@ const FirstLetter = styled.span `
     background-clip: text;
     color: transparent;
     font-size: 200%;
-    width: calc(10px + 2vmin*9);
+    width: calc(10px + 2vmin*9); /*Это нужно чтоб background-clip корректно вырезал букву*/
 `
 
 const RestLetters = styled.span `
-    margin-left: calc(10px + 2vmin*-3.5);
+    margin-left: calc(10px + 2vmin*-3.5); /*Это нужно чтоб убрать зазор между буквами предыдущим фиксом*/
 `
 
-const Label = styled.h3 `
-    margin-top: -7%;
+const Description = styled.p `
+    margin-top: -5%;
+    text-align: center;
 `
 
 class Title extends Component {
     render() {
         return (
             <Handler>
-                <AutorName>
-                    <FirstLetter>V</FirstLetter>
-                    <RestLetters>adim Pakhomov</RestLetters>
-                </AutorName>
-                <Label>Front-end Developer & UI/UX Designer</Label>
+                    <AutorName>
+                        <FirstLetter>V</FirstLetter>
+                        <RestLetters>adim Pakhomov</RestLetters>
+                    </AutorName>
+                    <Description>Front-end Developer & UI/UX Designer</Description>
             </Handler>
         );
     }
