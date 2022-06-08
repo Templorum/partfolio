@@ -6,9 +6,9 @@ import Title from './components/Title';
 const GlobalStyle = createGlobalStyle`
   body {
     @import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Tajawal:wght@200&display=swap');
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
+    margin: 0;
+    padding: 0;
+    border: 0;
     
     font-family: 'Tajawal', sans-serif;    
     -webkit-font-smoothing: antialiased;

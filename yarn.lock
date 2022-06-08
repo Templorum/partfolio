@@ -8191,7 +8191,7 @@
   "resolved" "https://registry.npmjs.org/style-loader/-/style-loader-3.3.1.tgz"
   "version" "3.3.1"
 
-"styled-components@^5.3.5", "styled-components@>= 2", "styled-components@>=4.0.0 || >=5.0.0":
+"styled-components@^4.0.0 || ^5.0.0", "styled-components@^5.3.5", "styled-components@>= 2", "styled-components@>=4.0.0 || >=5.0.0":
   "integrity" "sha512-ndETJ9RKaaL6q41B69WudeqLzOpY1A/ET/glXkNZ2T7dPjPqpPCXXQjDFYZWwNnE5co0wX+gTCqx9mfxTmSIPg=="
   "resolved" "https://registry.npmjs.org/styled-components/-/styled-components-5.3.5.tgz"
   "version" "5.3.5"
@@ -8206,6 +8206,11 @@
     "hoist-non-react-statics" "^3.0.0"
     "shallowequal" "^1.1.0"
     "supports-color" "^5.5.0"
+
+"styled-normalize@^8.0.7":
+  "integrity" "sha512-qQV4O7B9g7ZUnStCwGde7Dc/mcFF/pz0Ha/LL7+j/r6uopf6kJCmmR7jCPQMCBrDkYiQ4xvw1hUoceVJkdaMuQ=="
+  "resolved" "https://registry.npmjs.org/styled-normalize/-/styled-normalize-8.0.7.tgz"
+  "version" "8.0.7"
 
 "styled-reset@^4.4.1":
   "integrity" "sha512-7j99JIwzotNQmoS8MQJu8OTBDE48gaMEr6SYvuH8xfL0K/a5vNHSRaccTfAiGBs9D3mjLDPxg5iLh3HqFvefPQ=="

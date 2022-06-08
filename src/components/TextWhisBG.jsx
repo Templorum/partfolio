@@ -16,6 +16,7 @@ const BackgroundText = styled.h2`
     margin-top: calc(10px + 2vmin*-3);
     font-size: 300%;
     color: ${BGTextColor};
+    font-family: Arial, Helvetica, sans-serif;
 `
 
 const MainText = styled.p`
